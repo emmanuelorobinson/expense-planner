@@ -33,11 +33,19 @@ class MyHomePage extends StatelessWidget {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text(
-                'You have pushed the button this many times:',
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                child: Card(
+                  color: Colors.red,
+                  elevation: 5,
+                  child: const Text('CHART!'),
+                ),
               ),
-              Text('Start'),
+              const Card(
+                child: Text('LIST OF TX'),
+              ),
             ],
           ),
         ));
